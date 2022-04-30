@@ -1,16 +1,17 @@
 package db
 
 import (
+	"Exercises01/configs"
 	"encoding/json"
 	"fmt"
-	"github.com/astaxie/beego-develop-1.x/configs"
+	"io/ioutil"
+	"os"
+	"time"
+
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
-	"io/ioutil"
-	"os"
-	"time"
 )
 
 var DB *gorm.DB
