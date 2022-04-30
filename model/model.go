@@ -31,5 +31,5 @@ type TodomvcUpdate struct {
 
 type TodomvcFind struct {
 	Item   string
-	Status uint
+	Status int
 }
