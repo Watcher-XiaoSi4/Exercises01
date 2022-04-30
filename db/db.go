@@ -3,15 +3,14 @@ package db
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
-	"os"
-	"time"
-	"todomvc-app-template-golang/configs"
-
+	"github.com/astaxie/beego-develop-1.x/configs"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
+	"io/ioutil"
+	"os"
+	"time"
 )
 
 var DB *gorm.DB

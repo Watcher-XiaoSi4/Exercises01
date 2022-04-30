@@ -42,7 +42,7 @@ func initServer(engine *gin.Engine) *http.Server {
 
 func cors() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
-		ctx.Writer.Header().Set("Access-Control-Allow-Orgin", "*")
+		ctx.Writer.Header().Set("Access-Control-Allow-Origin", "*")
 		ctx.Writer.Header().Set("Access-Control-Allow-Headers", "Origin,Content-Type")
 
 		if ctx.Request.Method == "OPTIONS" {

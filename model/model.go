@@ -5,11 +5,11 @@ import (
 )
 
 const (
-	todomvc_status_active    = 0
-	todomvc_status_completed = 1
+	Exercises01_status_active    = 0
+	Exercises01_status_completed = 1
 )
 
-type ToDoMvc struct {
+type Todomvc struct {
 	gorm.Model
 	Item   string
 	Status uint

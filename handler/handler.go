@@ -1,9 +1,9 @@
 package handler
 
 import (
+	"Exercises01/db"
+	"Exercises01/model"
 	"net/http"
-	"todomvc-app-template-golang/db"
-	"todomvc-app-template-golang/model"
 
 	"github.com/gin-gonic/gin"
 )
