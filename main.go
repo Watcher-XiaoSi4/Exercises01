@@ -1,10 +1,10 @@
 package main
 
 import (
+	"Exercises01/db"
+	"Exercises01/handler"
 	"net/http"
 	"time"
-	"todomvc-app-template-golang/db"
-	"todomvc-app-template-golang/handler"
 
 	"github.com/gin-gonic/gin"
 )
