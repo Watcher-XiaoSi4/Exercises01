@@ -3,6 +3,7 @@ package main
 import (
 	"net/http"
 	"time"
+	"todomvc-app-template-golang/db"
 	"todomvc-app-template-golang/handler"
 
 	"github.com/gin-gonic/gin"
@@ -13,6 +14,7 @@ func main() {
 	engine.Use(cors())
 	initRouter(engine)
 	server := initServer(engine)
+	db.InitDB()
 	if err := server.ListenAndServe(); err != nil {
 		panic(err)
 	}
