@@ -10,6 +10,7 @@ import (
 )
 
 func main() {
+	gin.SetMode(gin.ReleaseMode)
 	engine := gin.Default()
 	engine.Use(cors())
 	initRouter(engine)
